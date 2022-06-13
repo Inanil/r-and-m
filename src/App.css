@@ -1,0 +1,194 @@
+:root {
+  /* ======= Colors===== */
+  --color-primary: rgba(203, 235, 1, 0.5);
+  --color-secundary: #CBEB01;
+  --color-tertiary: #902C87;
+  --color-quarter: rgb(0, 0, 0, 0.5);
+  --color-fifth:#7abf0b;
+  --color-sixth: rgb(0, 0, 0);
+  /* ======= Font and size===== */
+
+  --font-first: 'Raleway', sans-serif;
+  --font-second: 'Comfortaa', cursive;
+
+  --first-size: 20px;
+  --second-size: 22px;
+  --tertiary-size:32px;
+  --quarter-size: 40px;
+  --sixth-size: 28px;
+  --seventh-size: 30px;
+
+  --font-title: 'Fredoka One', cursive;
+  --font-content: 'League Spartan', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.loading{
+  background-image:url(./assets/img/byg.jpg); 
+  background-size:cover;
+  min-height:100vh;
+  min-width:100vh;
+}
+
+.header {
+  min-height:48vh;
+  min-width:48vh;
+  background-image: url(./assets/img/green.jpg);
+  background-position:center;
+  padding:20px;
+  background-size:cover;
+  display:flex;
+ flex-direction:column;
+   align-items:center;
+  justify-content: center;
+  } 
+
+.card-location {
+  width: min(500px, 80%);
+  padding: 30px 50px;
+  background-color:var(--color-primary);
+  color: var(--color-tertiary);
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.card-location_name {
+  font-family: var(--font-title);
+  font-size: var(--quarter-size);
+}
+
+
+.card-location_data {
+ 
+  display: flex;
+  gap:50px;
+  list-style: none;
+}
+
+.card-location_popu,
+.card-location_dimension,
+.card-location_type {
+  font-family: var(--font-content);
+  font-weight:400;
+  font-size: var(--first-size);
+}
+
+.card-popula_span,
+.card-dimesion_span,
+.card-type_span {
+  font-weight:600;
+  font-size: var(--second-size);
+}
+
+.search-container{
+  display: flex;
+  align-items:center;
+}
+.search-input {
+  outline: none;
+  border: 3px solid var(--color-secundary);
+  border-radius: 20px;
+  background-color: var(--color-quarter);
+  padding: 10px 60px;
+  color: var(--color-secundary);
+  font-family:var(--font-content);
+  font-size:var(--first-size);
+}
+
+.search-btn {
+  outline: none;
+  border: 3px solid var(--color-secundary);
+  aspect-ratio: 1;
+  background-color: var(--color-sixth);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 20px;
+  color: var(--color-secundary);
+  font-size: var(--second-size);
+}
+
+.main-cards_container {
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(5deg, rgba(0, 0, 0, 1) 46%, rgba(119, 191, 11, 1) 91%);
+  background-position: center;
+  padding: 30px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.card-character {
+  width: min(400px, 80%);
+  height: min(400px, 80%);
+  padding: 28px;
+  background-color: #CBEB01;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-character_data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card-character_data img {
+  width: min(300px, 80%);
+  border-radius: 50%;
+  width: 130%;
+  height: 130%;
+  aspect-ratio: 1;
+}
+
+/* .card-character_data img {
+  border-radius:20px;
+  width:130%;
+  height:130%;
+  aspect-ratio: 1;
+} */
+
+.card-character_status {
+  position: absolute;
+  top:150px;
+  right: -45px;
+  padding: 8px 30px;
+  background-color: var(--color-sixth);
+  border-radius: 20px;
+  color: var(--color-secundary);
+  display: flex;
+  gap: 10px;
+  border: 2px solid var(--color-fifth);
+  font-family: var(--font-content);
+  font-size: var(--first-size);
+}
+.card-character_name{
+  font-family:var(--font-content);
+  font-size: var(--tertiary-size);
+  font-weight:800;
+}
+
+
+.card-character_episodes,
+.card-character_origin{
+  font-family:var(--font-content);
+  font-size: var(--sixth-size);
+  font-weight:400;
+}
+.card-episodes_span,
+.card-origin_span{
+  font-family:var(--font-content);
+  font-size: var(--seventh-size);
+  font-weight:600;
+}
